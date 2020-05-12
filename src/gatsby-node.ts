@@ -89,7 +89,7 @@ export const sourceNodes: GatsbyNode['sourceNodes'] = async (
     program.directory,
     'public',
     [pluginOptions.typePathsFilenamePrefix, schemasDigest, '.json']
-      .filter(part => part !== undefined && part !== null)
+      .filter((part) => part !== undefined && part !== null)
       .join(''),
   )
 
@@ -107,7 +107,9 @@ export const createResolvers: GatsbyNode['createResolvers'] = async (
   createResolvers(gatsbyImageResolvers)
 }
 
-export const onPreExtractQueries: GatsbyNode['onPreExtractQueries'] = gatsbyContext => {
+export const onPreExtractQueries: GatsbyNode['onPreExtractQueries'] = (
+  gatsbyContext,
+) => {
   const { store } = gatsbyContext
   const { program } = store.getState()
 
