@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.2.2](https://github.com/angeloashmore/gatsby-source-prismic/compare/v3.2.1...v3.2.2) (2020-08-28)
+
+
+### Bug Fixes
+
+* omit access token ([fd6b9f3](https://github.com/angeloashmore/gatsby-source-prismic/commit/fd6b9f330ad8236df274c2f4d7411188ff45534e))
+* Preview docs, unpublished code example ([494eee7](https://github.com/angeloashmore/gatsby-source-prismic/commit/494eee7812bf237ad89214e2852788a698895af0))
+
 ### [3.2.1](https://github.com/angeloashmore/gatsby-source-prismic/compare/v3.2.0...v3.2.1) (2020-07-26)
 
 
