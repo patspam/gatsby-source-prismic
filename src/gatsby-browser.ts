@@ -36,7 +36,7 @@ export const onClientEntry: GatsbyBrowser['onClientEntry'] = (
 
   window[BROWSER_STORE_KEY] = Object.assign({}, window[BROWSER_STORE_KEY], {
     [pluginOptions.repositoryName]: {
-      pluginOptions: omit(pluginOptions, ['schemas', 'plugins']),
+      pluginOptions: omit(pluginOptions, ['schemas', 'plugins', 'accessToken']),
       schemasDigest: md5(JSON.stringify(pluginOptions.schemas)),
     },
   })
